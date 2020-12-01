@@ -16,7 +16,8 @@ div#sps_1 a#sps_1_link
     text-indent: -9999px;
 	overflow:hidden;
 	text-decoration: none;
-    background: transparent url("/time/20200407/sidebar.png") 0 0 no-repeat;
+	/* background: transparent url("https://www.w3school.com.cn/time/20200407/sidebar.png") 0 0 no-repeat; */
+	background: transparent url("time/20200407/sidebar.png") 0 0 no-repeat;
     }
 
 @media
@@ -30,7 +31,7 @@ div#sps_1 a#sps_1_link
     text-indent: -9999px;
 	overflow:hidden;
 	text-decoration: none;
-    background: transparent url("/time/20200407/sidebar-retina.png") 0 0 no-repeat;
+    background: transparent url("time/20200407/sidebar-retina.png") 0 0 no-repeat;
     background-size: auto 600px;
     }
 }
@@ -58,7 +59,7 @@ div#sp_header a#sp_header_link
     text-indent: -9999px;
 	overflow:hidden;
 	text-decoration: none;
-    background: transparent url("/time/20200922/kkb.jpg") 0 0 no-repeat;
+    background: transparent url("time/20200922/kkb.jpg") 0 0 no-repeat;
     }
 
 @media
@@ -74,7 +75,7 @@ div#sp_header a#sp_header_link
     text-indent: -9999px;
 	overflow:hidden;
 	text-decoration: none;
-    background: transparent url("/time/20200922/kkb-retina.jpg") 0 0 no-repeat;
+    background: transparent url("time/20200922/kkb-retina.jpg") 0 0 no-repeat;
     background-size: auto 90px;
     }
 }
@@ -96,7 +97,7 @@ div#foogz a#foogz_link
     text-indent: -9999px;
 	overflow:hidden;
 	text-decoration: none;
-    background: transparent url("/time/20200407/footer.gif") 0 0 no-repeat;
+    background: transparent url("time/20200407/footer.gif") 0 0 no-repeat;
     }
 
 @media
@@ -110,7 +111,7 @@ div#foogz a#foogz_link
     text-indent: -9999px;
 	overflow:hidden;
 	text-decoration: none;
-    background: transparent url("/time/20200407/footer-retina.gif") 0 0 no-repeat;
+    background: transparent url("time/20200407/footer-retina.gif") 0 0 no-repeat;
     background-size: auto 250px;
     }
 }
@@ -185,7 +186,7 @@ p.tip span {
 	}
 
 p.tip2 {
-		background: #BBEDB8 url(/ui2017/tip.png) top left no-repeat;
+		background: #BBEDB8 url(ui2017/tip.png) top left no-repeat;
 		display:block;
 		padding:15px 15px 15px 50px;
 		color:#000;
@@ -230,7 +231,7 @@ em
 
 .html5_new_note
 		{
-		background: #ffffff url(/i/html5_new_note.png) top left no-repeat;
+		background: #ffffff url(i/html5_new_note.png) top left no-repeat;
 		padding-left:20px;
 		}
 
@@ -276,7 +277,7 @@ div#wrapper
 		border: 0;
 		width: 1239px;
 		text-align: left;
-		background: transparent url(/ui2017/wrapper.png) top left repeat-y;
+		background: transparent url(ui2017/wrapper.png) top left repeat-y;
 		}
 
 div#navsecond
@@ -333,7 +334,7 @@ div#footer
 		line-height:24px;
 		background: #f0f0f0;
 		border-top: 0px solid #fff;
-		background: #fdfcf8 url(/ui2017/footer.png) top left repeat-x;
+		background: #fdfcf8 url(ui2017/footer.png) top left repeat-x;
 		font-family:PingFangSC-Regular, '΢���ź�', Verdana, Arial, '����';
 		}
 
@@ -342,7 +343,7 @@ div#footer #p1
 		font-size:12px;
 		color:#000;
 		text-align:center;
-		background: transparent url(/ui2017/alert.png) no-repeat;
+		background: transparent url(ui2017/alert.png) no-repeat;
 		background-position:235px 2px;
 		}
 
@@ -406,12 +407,12 @@ div#header a#logo:link, div#header a#logo:visited
 		display: block;	
 		width: 372px;
 		height: 90px;
-		background : transparent url(/ui2019/bg.png) 0 -150px no-repeat;
+		background : transparent url(ui2019/bg.png) 0 -150px no-repeat;
 		}
 
 div#header a#logo:hover
 		{
-		background: transparent url(/ui2019/bg.png) 0 -250px no-repeat;
+		background: transparent url(ui2019/bg.png) 0 -250px no-repeat;
 		}
 
 @media
@@ -436,13 +437,13 @@ only screen and (-webkit-min-device-pixel-ratio: 2) {
             display: block;	
             width: 372px;
             height: 90px;
-            background : transparent url("/ui2019/bg-retina.png") 0 -150px no-repeat;
+            background : transparent url("ui2019/bg-retina.png") 0 -150px no-repeat;
             background-size: auto 900px;
             }
 
     div#header a#logo:hover
             {
-            background: transparent url("/ui2019/bg-retina.png") 0 -250px no-repeat;
+            background: transparent url("ui2019/bg-retina.png") 0 -250px no-repeat;
             background-size: auto 900px;
             }
 
@@ -468,12 +469,12 @@ div#header_index a:link, div#header_index a:visited, div#header_index h1
 		display: block;	
 		width: 500px;
 		height: 100px;
-		background : transparent url(/ui2019/bg.png) 0 -150px no-repeat;
+		background : transparent url(ui2019/bg.png) 0 -150px no-repeat;
 		}
 
 div#header_index a:hover
 		{
-		background: transparent url(/ui2019/bg.png) 0 -250px no-repeat;
+		background: transparent url(ui2019/bg.png) 0 -250px no-repeat;
 		}
 
 
@@ -500,13 +501,13 @@ only screen and (-webkit-min-device-pixel-ratio: 2) {
             display: block;	
             width: 500px;
             height: 90px;
-            background : transparent url("/ui2019/bg-retina.png") 0 -150px no-repeat;
+            background : transparent url("ui2019/bg-retina.png") 0 -150px no-repeat;
             background-size: auto 900px;
             }
 
     div#header_index a:hover
             {
-            background: transparent url("/ui2019/bg-retina.png") 0 -250px no-repeat;
+            background: transparent url("ui2019/bg-retina.png") 0 -250px no-repeat;
             background-size: auto 900px;
             }
 
@@ -608,46 +609,46 @@ body#homefirst div#maincontent div#update
 
 body#homefirst div#maincontent div#d2
 		{
-		background : transparent url(/ui2017/icon2.png) 0 0 no-repeat;
+		background : transparent url(ui2017/icon2.png) 0 0 no-repeat;
 		}
 
 body#homefirst div#maincontent div#d3
 		{
-		background : transparent url(/ui2017/icon3.png) 0 0 no-repeat;
+		background : transparent url(ui2017/icon3.png) 0 0 no-repeat;
 		}
 
 body#homefirst div#maincontent div#d4
 		{
-		background : transparent url(/ui2017/icon4.png) 0 0 no-repeat;
+		background : transparent url(ui2017/icon4.png) 0 0 no-repeat;
 		}
 
 body#homefirst div#maincontent div#d5
 		{
-		background : transparent url(/ui2017/icon5.png) 0 0 no-repeat;
+		background : transparent url(ui2017/icon5.png) 0 0 no-repeat;
 		}
 
 body#homefirst div#maincontent div#d6
 		{
-		background : transparent url(/ui2017/icon6.png) 0 0 no-repeat;
+		background : transparent url(ui2017/icon6.png) 0 0 no-repeat;
 		}
 
 body#homefirst div#maincontent div#d7
 		{
-		background : transparent url(/ui2017/icon7.png) 0 0 no-repeat;
+		background : transparent url(ui2017/icon7.png) 0 0 no-repeat;
 		}
 
 body#homefirst div#maincontent div#d8
 		{
-		background : transparent url(/ui2017/icon8.png) 0 0 no-repeat;
+		background : transparent url(ui2017/icon8.png) 0 0 no-repeat;
 		border:0px;
 		}
 
 body#homefirst div#maincontent div#d9		{
-		background: transparent url(/ui2017/icon9.png) top left no-repeat;
+		background: transparent url(ui2017/icon9.png) top left no-repeat;
 		}
 
 body#homefirst div#maincontent div#d10		{
-		background: transparent url(/ui2017/icon10.png) top left no-repeat;
+		background: transparent url(ui2017/icon10.png) top left no-repeat;
 		}
 
 body#homefirst div#maincontent div#d9, body#homefirst div#maincontent div#d10	{
@@ -698,37 +699,37 @@ only screen and (-webkit-min-device-pixel-ratio: 2) {
 
 body#homefirst div#maincontent div#d2
 		{
-		background : transparent url("/ui2019/ref-retina.png") 0 0 no-repeat;
+		background : transparent url("ui2019/ref-retina.png") 0 0 no-repeat;
         background-size: auto 80px;
 		}
 
 body#homefirst div#maincontent div#d3
 		{
-		background : transparent url("/ui2019/try-retina.png") 0 0 no-repeat;
+		background : transparent url("ui2019/try-retina.png") 0 0 no-repeat;
         background-size: auto 80px;
 		}
 
 body#homefirst div#maincontent div#d4
 		{
-		background : transparent url("/ui2019/easy-retina.png") 0 0 no-repeat;
+		background : transparent url("ui2019/easy-retina.png") 0 0 no-repeat;
         background-size: auto 80px;
 		}
 
 body#homefirst div#maincontent div#d5
 		{
-		background : transparent url("/ui2019/how-retina.png") 0 0 no-repeat;
+		background : transparent url("ui2019/how-retina.png") 0 0 no-repeat;
         background-size: auto 80px;
 		}
 
 body#homefirst div#maincontent div#d6
 		{
-		background : transparent url("/ui2019/news-retina.png") 0 0 no-repeat;
+		background : transparent url("ui2019/news-retina.png") 0 0 no-repeat;
         background-size: auto 80px;
 		}
 
 body#homefirst div#maincontent div#d7
 		{
-		background : transparent url("/ui2019/update-retina.png") 0 0 no-repeat;
+		background : transparent url("ui2019/update-retina.png") 0 0 no-repeat;
         background-size: auto 80px;
 		}
 
@@ -778,7 +779,7 @@ div#navfirst ul#menu li a
 		}
 
 
-div#navfirst ul#menu  {background: transparent url(/ui2019/bg.png) top left no-repeat;}
+div#navfirst ul#menu  {background: transparent url(ui2019/bg.png) top left no-repeat;}
 
 #h	{width: 166px; left: 0px;}
 #b	{width: 191px; left: 166px;}
@@ -788,21 +789,21 @@ div#navfirst ul#menu  {background: transparent url(/ui2019/bg.png) top left no-r
 #w	{width: 197px; left: 843px;}
 #r	{width: 170px; left: 1040px;}
 
-#h a:hover	{background: transparent url(/ui2019/bg.png) 0 -48px no-repeat;}
-#b a:hover	{background: transparent url(/ui2019/bg.png) -166px -48px no-repeat;}
-#s a:hover	{background: transparent url(/ui2019/bg.png) -357px -48px no-repeat;}
-#p a:hover	{background: transparent url(/ui2019/bg.png) -532px -48px no-repeat;}
-#x a:hover	{background: transparent url(/ui2019/bg.png) -730px -48px no-repeat;}
-#w a:hover	{background: transparent url(/ui2019/bg.png) -843px -48px no-repeat;}
-#r a:hover	{background: transparent url(/ui2019/bg.png) -1040px -48px no-repeat;}
+#h a:hover	{background: transparent url(ui2019/bg.png) 0 -48px no-repeat;}
+#b a:hover	{background: transparent url(ui2019/bg.png) -166px -48px no-repeat;}
+#s a:hover	{background: transparent url(ui2019/bg.png) -357px -48px no-repeat;}
+#p a:hover	{background: transparent url(ui2019/bg.png) -532px -48px no-repeat;}
+#x a:hover	{background: transparent url(ui2019/bg.png) -730px -48px no-repeat;}
+#w a:hover	{background: transparent url(ui2019/bg.png) -843px -48px no-repeat;}
+#r a:hover	{background: transparent url(ui2019/bg.png) -1040px -48px no-repeat;}
 
-body.html #h				{background: transparent url(/ui2019/bg.png) 0 -48px no-repeat;}
-body.browserscripting #b	{background: transparent url(/ui2019/bg.png) -166px -48px no-repeat;}
-body.serverscripting #s     {background: transparent url(/ui2019/bg.png) -357px -48px no-repeat;}
-body.programming #p         {background: transparent url(/ui2019/bg.png) -532px -48px no-repeat;}
-body.xml #x					{background: transparent url(/ui2019/bg.png) -730px -48px no-repeat;}
-body.webbuilding #w		    {background: transparent url(/ui2019/bg.png) -843px -48px no-repeat;}
-body.reference #r		    {background: transparent url(/ui2019/bg.png) -1040px -48px no-repeat;}
+body.html #h				{background: transparent url(ui2019/bg.png) 0 -48px no-repeat;}
+body.browserscripting #b	{background: transparent url(ui2019/bg.png) -166px -48px no-repeat;}
+body.serverscripting #s     {background: transparent url(ui2019/bg.png) -357px -48px no-repeat;}
+body.programming #p         {background: transparent url(ui2019/bg.png) -532px -48px no-repeat;}
+body.xml #x					{background: transparent url(ui2019/bg.png) -730px -48px no-repeat;}
+body.webbuilding #w		    {background: transparent url(ui2019/bg.png) -843px -48px no-repeat;}
+body.reference #r		    {background: transparent url(ui2019/bg.png) -1040px -48px no-repeat;}
 
 
 
@@ -810,7 +811,7 @@ body.reference #r		    {background: transparent url(/ui2019/bg.png) -1040px -48p
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2) {
 
-div#navfirst ul#menu  {background: transparent url("/ui2019/bg-retina.png") top left no-repeat; background-size: auto 900px;}
+div#navfirst ul#menu  {background: transparent url("ui2019/bg-retina.png") top left no-repeat; background-size: auto 900px;}
 
 #h	{width: 166px; left: 0px;}
 #b	{width: 191px; left: 166px;}
@@ -820,21 +821,21 @@ div#navfirst ul#menu  {background: transparent url("/ui2019/bg-retina.png") top 
 #w	{width: 197px; left: 843px;}
 #r	{width: 170px; left: 1040px;}
 
-#h a:hover	{background: transparent url("/ui2019/bg-retina.png") 0 -48px no-repeat; background-size: auto 900px;}
-#b a:hover	{background: transparent url("/ui2019/bg-retina.png") -166px -48px no-repeat; background-size: auto 900px;}
-#s a:hover	{background: transparent url("/ui2019/bg-retina.png") -357px -48px no-repeat; background-size: auto 900px;}
-#p a:hover	{background: transparent url("/ui2019/bg-retina.png") -532px -48px no-repeat; background-size: auto 900px;}
-#x a:hover	{background: transparent url("/ui2019/bg-retina.png") -730px -48px no-repeat; background-size: auto 900px;}
-#w a:hover	{background: transparent url("/ui2019/bg-retina.png") -843px -48px no-repeat; background-size: auto 900px;}
-#r a:hover	{background: transparent url("/ui2019/bg-retina.png") -1040px -48px no-repeat; background-size: auto 900px;}
+#h a:hover	{background: transparent url("ui2019/bg-retina.png") 0 -48px no-repeat; background-size: auto 900px;}
+#b a:hover	{background: transparent url("ui2019/bg-retina.png") -166px -48px no-repeat; background-size: auto 900px;}
+#s a:hover	{background: transparent url("ui2019/bg-retina.png") -357px -48px no-repeat; background-size: auto 900px;}
+#p a:hover	{background: transparent url("ui2019/bg-retina.png") -532px -48px no-repeat; background-size: auto 900px;}
+#x a:hover	{background: transparent url("ui2019/bg-retina.png") -730px -48px no-repeat; background-size: auto 900px;}
+#w a:hover	{background: transparent url("ui2019/bg-retina.png") -843px -48px no-repeat; background-size: auto 900px;}
+#r a:hover	{background: transparent url("ui2019/bg-retina.png") -1040px -48px no-repeat; background-size: auto 900px;}
 
-body.html #h				{background: transparent url("/ui2019/bg-retina.png") 0 -48px no-repeat; background-size: auto 900px;}
-body.browserscripting #b    {background: transparent url("/ui2019/bg-retina.png") -166px -48px no-repeat; background-size: auto 900px;}
-body.serverscripting #s     {background: transparent url("/ui2019/bg-retina.png") -357px -48px no-repeat; background-size: auto 900px;}
-body.programming #p         {background: transparent url("/ui2019/bg-retina.png") -532px -48px no-repeat; background-size: auto 900px;}
-body.xml #x					{background: transparent url("/ui2019/bg-retina.png") -730px -48px no-repeat; background-size: auto 900px;}
-body.webbuilding #w		    {background: transparent url("/ui2019/bg-retina.png") -843px -48px no-repeat; background-size: auto 900px;}
-body.reference #r		    {background: transparent url("/ui2019/bg-retina.png") -1040px -48px no-repeat; background-size: auto 900px;}
+body.html #h				{background: transparent url("ui2019/bg-retina.png") 0 -48px no-repeat; background-size: auto 900px;}
+body.browserscripting #b    {background: transparent url("ui2019/bg-retina.png") -166px -48px no-repeat; background-size: auto 900px;}
+body.serverscripting #s     {background: transparent url("ui2019/bg-retina.png") -357px -48px no-repeat; background-size: auto 900px;}
+body.programming #p         {background: transparent url("ui2019/bg-retina.png") -532px -48px no-repeat; background-size: auto 900px;}
+body.xml #x					{background: transparent url("ui2019/bg-retina.png") -730px -48px no-repeat; background-size: auto 900px;}
+body.webbuilding #w		    {background: transparent url("ui2019/bg-retina.png") -843px -48px no-repeat; background-size: auto 900px;}
+body.reference #r		    {background: transparent url("ui2019/bg-retina.png") -1040px -48px no-repeat; background-size: auto 900px;}
 
 }
 
@@ -1298,7 +1299,7 @@ div#maincontent table.dataintable ul.listintable  li{
 
 
 table.dataintable td.html5_new {
-	background: transparent url(/ui2017/table_bg_html5.png) top right no-repeat;
+	background: transparent url(ui2017/table_bg_html5.png) top right no-repeat;
 	}
 
 tr.notsupported {
@@ -1330,63 +1331,63 @@ table.browsersupport td
 	}
 
 table.browsersupport .bsIE {
-	background-image: url('/ui2017/compatible_ie.png');
+	background-image: url('ui2017/compatible_ie.png');
 }
 
 table.browsersupport .bsFirefox {
-	background-image: url('/ui2017/compatible_firefox.png');
+	background-image: url('ui2017/compatible_firefox.png');
 }
 
 table.browsersupport .bsChrome {
-	background-image: url('/ui2017/compatible_chrome.png');
+	background-image: url('ui2017/compatible_chrome.png');
 }
 
 table.browsersupport .bsSafari {
-	background-image: url('/ui2017/compatible_safari.png');
+	background-image: url('ui2017/compatible_safari.png');
 }
 
 table.browsersupport .bsOpera {
-	background-image: url('/ui2017/compatible_opera.png');
+	background-image: url('ui2017/compatible_opera.png');
 }
 
 table.browsersupport .bsNoIE {
-	background-image: url('/ui2017/incompatible_ie.png');
+	background-image: url('ui2017/incompatible_ie.png');
 }
 
 table.browsersupport .bsNoFirefox {
-	background-image: url('/ui2017/incompatible_firefox.png');
+	background-image: url('ui2017/incompatible_firefox.png');
 }
 
 table.browsersupport .bsNoChrome {
-	background-image: url('/ui2017/incompatible_chrome.png');
+	background-image: url('ui2017/incompatible_chrome.png');
 }
 
 table.browsersupport .bsNoSafari {
-	background-image: url('/ui2017/incompatible_safari.png');
+	background-image: url('ui2017/incompatible_safari.png');
 }
 
 table.browsersupport .bsNoOpera {
-	background-image: url('/ui2017/incompatible_opera.png');
+	background-image: url('ui2017/incompatible_opera.png');
 }
 
 table.browsersupport .bsPreIE {
-	background-image: url('/i/precompatible_ie.gif');
+	background-image: url('i/precompatible_ie.gif');
 }
 
 table.browsersupport .bsPreFirefox {
-	background-image: url('/i/precompatible_firefox.gif');
+	background-image: url('i/precompatible_firefox.gif');
 }
 
 table.browsersupport .bsPreChrome {
-	background-image: url('/i/precompatible_chrome.gif');
+	background-image: url('i/precompatible_chrome.gif');
 }
 
 table.browsersupport .bsPreSafari {
-	background-image: url('/i/precompatible_safari.gif');
+	background-image: url('i/precompatible_safari.gif');
 }
 
 table.browsersupport .bsPreOpera {
-	background-image: url('/i/precompatible_opera.gif');
+	background-image: url('i/precompatible_opera.gif');
 }
 
 table.browsersupport {
@@ -1445,7 +1446,7 @@ div#tpn, div#bpn	{
 	}
 
 ul.prenext	{
-	background: transparent url(/ui2019/bg.png) 0 -600px no-repeat;
+	background: transparent url(ui2019/bg.png) 0 -600px no-repeat;
 	position:relative;
     height:24px;
 	width:212px;
@@ -1470,8 +1471,8 @@ ul.prenext a	{
 .pre	{left:0; width:94px;}
 .next	{left:118px; width:94px;}
 
-.pre a:hover	{background: transparent url(/ui2019/bg.png) 0px -650px no-repeat;}
-.next a:hover	{background: transparent url(/ui2019/bg.png) -118px -650px no-repeat;}
+.pre a:hover	{background: transparent url(ui2019/bg.png) 0px -650px no-repeat;}
+.next a:hover	{background: transparent url(ui2019/bg.png) -118px -650px no-repeat;}
 
 
 
@@ -1492,7 +1493,7 @@ div#tpn, div#bpn	{
 	}
 
 ul.prenext	{
-	background: transparent url("/ui2019/bg-retina.png") 0 -600px no-repeat;
+	background: transparent url("ui2019/bg-retina.png") 0 -600px no-repeat;
     background-size: auto 900px;
 	position:relative;
     height:24px;
@@ -1518,8 +1519,8 @@ ul.prenext a	{
 .pre	{left:0; width:94px;}
 .next	{left:118px; width:94px;}
 
-.pre a:hover	{background: transparent url("/ui2019/bg-retina.png") 0px -650px no-repeat; background-size: auto 900px;}
-.next a:hover	{background: transparent url("/ui2019/bg-retina.png") -118px -650px no-repeat; background-size: auto 900px;}
+.pre a:hover	{background: transparent url("ui2019/bg-retina.png") 0px -650px no-repeat; background-size: auto 900px;}
+.next a:hover	{background: transparent url("ui2019/bg-retina.png") -118px -650px no-repeat; background-size: auto 900px;}
 
 }
 
@@ -1533,27 +1534,27 @@ div#course, div#selected, div#tools, div#sp_sidebar {
 	}
 
 div#course {
-	background:transparent url(/ui2019/bg.png) 0 -800px no-repeat;
+	background:transparent url(ui2019/bg.png) 0 -800px no-repeat;
 	padding:66px 0 10px 0;
 	}
 
 div#selected {
-	background:transparent url(/ui2019/bg.png) -200px -800px no-repeat;
+	background:transparent url(ui2019/bg.png) -200px -800px no-repeat;
 	padding:45px 0 10px 0;
 	}
 
 div#tools {
-	background:transparent url(/ui2019/bg.png) -400px -800px no-repeat;
+	background:transparent url(ui2019/bg.png) -400px -800px no-repeat;
 	padding:79px 0 10px 22px;
 	}
 
 div#sp_sidebar {
-	background:transparent url(/ui2019/bg.png) -600px -800px no-repeat;
+	background:transparent url(ui2019/bg.png) -600px -800px no-repeat;
 	padding:66px 0 10px 10px;
 	}
 
 div#sidebar div#sp_sidebar:first-child {
-	background:transparent url(/ui2019/bg.png) -800px -800px no-repeat;
+	background:transparent url(ui2019/bg.png) -800px -800px no-repeat;
 	padding:66px 0 10px 10px;
 	}
 
@@ -1568,31 +1569,31 @@ div#course, div#selected, div#tools, div#sp_sidebar {
 	}
 
 div#course {
-	background:transparent url("/ui2019/bg-retina.png") 0 -800px no-repeat;
+	background:transparent url("ui2019/bg-retina.png") 0 -800px no-repeat;
 	padding:66px 0 10px 0;
     background-size: auto 900px;
 	}
 
 div#selected {
-	background:transparent url("/ui2019/bg-retina.png") -200px -800px no-repeat;
+	background:transparent url("ui2019/bg-retina.png") -200px -800px no-repeat;
 	padding:45px 0 10px 0;
     background-size: auto 900px;
 	}
 
 div#tools {
-	background:transparent url("/ui2019/bg-retina.png") -400px -800px no-repeat;
+	background:transparent url("ui2019/bg-retina.png") -400px -800px no-repeat;
 	padding:79px 0 10px 22px;
     background-size: auto 900px;
 	}
 
 div#sp_sidebar {
-	background:transparent url("/ui2019/bg-retina.png") -600px -800px no-repeat;
+	background:transparent url("ui2019/bg-retina.png") -600px -800px no-repeat;
 	padding:66px 0 10px 10px;
     background-size: auto 900px;
 	}
 
 div#sidebar div#sp_sidebar:first-child {
-	background:transparent url("/ui2019/bg-retina.png") -800px -800px no-repeat;
+	background:transparent url("ui2019/bg-retina.png") -800px -800px no-repeat;
 	padding:66px 0 10px 10px;
     background-size: auto 900px;
 	}
@@ -1639,27 +1640,27 @@ div#tools h5#tools_reference a, div#tools h5#tools_example a, div#tools h5#tools
 	}
 
 div#tools h5#tools_reference a	{
-	background: transparent url(/ui2019/bg.png) 0 -400px no-repeat;
+	background: transparent url(ui2019/bg.png) 0 -400px no-repeat;
 	}
 
 div#tools h5#tools_reference a:hover	{
-	background: transparent url(/ui2019/bg.png) 0 -464px no-repeat;
+	background: transparent url(ui2019/bg.png) 0 -464px no-repeat;
 	}
 
 div#tools h5#tools_example a	{
-	background: transparent url(/ui2019/bg.png) -150px -400px no-repeat;
+	background: transparent url(ui2019/bg.png) -150px -400px no-repeat;
 	}
 
 div#tools h5#tools_example a:hover	{
-	background: transparent url(/ui2019/bg.png) -150px -464px no-repeat;
+	background: transparent url(ui2019/bg.png) -150px -464px no-repeat;
 	}
 
 div#tools h5#tools_quiz a	{
-	background: transparent url(/ui2019/bg.png) -300px -400px no-repeat;
+	background: transparent url(ui2019/bg.png) -300px -400px no-repeat;
 	}
 
 div#tools h5#tools_quiz a:hover	{
-	background: transparent url(/ui2019/bg.png) -300px -464px no-repeat;
+	background: transparent url(ui2019/bg.png) -300px -464px no-repeat;
 	}
 
 
@@ -1688,32 +1689,32 @@ div#tools h5#tools_reference a, div#tools h5#tools_example a, div#tools h5#tools
 	}
 
 div#tools h5#tools_reference a	{
-	background: transparent url("/ui2019/bg-retina.png") 0 -400px no-repeat;
+	background: transparent url("ui2019/bg-retina.png") 0 -400px no-repeat;
     background-size: auto 900px;
 	}
 
 div#tools h5#tools_reference a:hover	{
-	background: transparent url("/ui2019/bg-retina.png") 0 -464px no-repeat;
+	background: transparent url("ui2019/bg-retina.png") 0 -464px no-repeat;
     background-size: auto 900px;
 	}
 
 div#tools h5#tools_example a	{
-	background: transparent url("/ui2019/bg-retina.png") -150px -400px no-repeat;
+	background: transparent url("ui2019/bg-retina.png") -150px -400px no-repeat;
     background-size: auto 900px;
 	}
 
 div#tools h5#tools_example a:hover	{
-	background: transparent url("/ui2019/bg-retina.png") -150px -464px no-repeat;
+	background: transparent url("ui2019/bg-retina.png") -150px -464px no-repeat;
     background-size: auto 900px;
 	}
 
 div#tools h5#tools_quiz a	{
-	background: transparent url("/ui2019/bg-retina.png") -300px -400px no-repeat;
+	background: transparent url("ui2019/bg-retina.png") -300px -400px no-repeat;
     background-size: auto 900px;
 	}
 
 div#tools h5#tools_quiz a:hover	{
-	background: transparent url("/ui2019/bg-retina.png") -300px -464px no-repeat;
+	background: transparent url("ui2019/bg-retina.png") -300px -464px no-repeat;
     background-size: auto 900px;
 	}
 
