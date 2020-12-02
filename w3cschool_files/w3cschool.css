@@ -1,4 +1,17 @@
-/* ----------------------------------- default -----------------------------------*/
+/* ----------------------------------- global -----------------------------------*/
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #fdfcf8;
+}
+
+body {
+    font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
+    font-size: 14px;
+}
 
 * {
     margin: 0;
@@ -288,7 +301,13 @@ div#maincontent h1 {
     color: #3f3f3f;
 }
 
-div#w3school p {
+div#maincontent h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+div#maincontent div#w3school p {
     margin-left: 15px;
 }
 
@@ -421,6 +440,13 @@ div#footer #p1,
 div#footer #p2,
 div#footer #p2 a {
     max-height: 0;
+}
+
+div#footer #p1 {
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+    background-position: 235px 2px;
 }
 
 div#footer #p2 {
