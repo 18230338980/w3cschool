@@ -1,76 +1,9 @@
-body {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: #fdfcf8;
-}
-
-body {
-    font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
-    font-size: 14px;
-}
+/* ----------------------------------- default -----------------------------------*/
 
 * {
     margin: 0;
     padding: 0;
     border: 0;
-}
-
-div {
-    display: block;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6,
-em {
-    font-weight: bold;
-}
-
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
 }
 
 a:link,
@@ -81,25 +14,24 @@ a:visited {
     border-bottom: 1px solid #900b09;
 }
 
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
+a:hover {
+    text-decoration: none;
+    color: #ff0000;
+    background: transparent;
+    border-bottom: 1px solid #ff0000;
 }
 
-strong {
-    font-weight: bold;
-}
-
-
-/* ----------------------------------- homesecond -----------------------------------*/
-
-body#homesecond {
-    font-weight: bold;
+a:active {
+    text-decoration: none;
+    color: #ff0000;
+    background: transparent;
 }
 
 
 /* ----------------------------------- wrapper -----------------------------------*/
+
+
+/*设置页面边框图片居中*/
 
 div#wrapper {
     margin: 0 auto;
@@ -107,11 +39,14 @@ div#wrapper {
     border: 0;
     width: 1239px;
     text-align: left;
-    background: transparent url(/ui2017/wrapper.png) top left repeat-y;
+    background: transparent url(ui2017/wrapper.png) top left repeat-y;
 }
 
 
 /* ----------------------------------- header -----------------------------------*/
+
+
+/*设置log*/
 
 div#header {
     margin: 0 0 0 12px;
@@ -261,13 +196,9 @@ body.html #h {
 
 /* ----------------------------------- navsecond ----------------------------------- */
 
-html>body div#navsecond {
-    margin-left: 12px;
-}
-
 div#navsecond {
     float: left;
-    margin: 0 0 0 6px;
+    margin: 0 0 0 12px;
     padding: 0;
     border: 0;
     width: 180px;
@@ -284,33 +215,10 @@ div#course {
     border: 0;
 }
 
-div#navsecond h2 {
-    font-size: 14px;
-    margin: 0;
-    padding: 10px 0 5px 10px;
-    color: #000;
-    display: block;
-    border-bottom: 0px solid #ddd;
-    font-family: '微软雅黑';
-}
-
-div#navsecond ul,
-div#navsecond li {
-    margin: 0;
-    padding: 0;
-    font-family: '微软雅黑';
-}
-
-div#navsecond li {
-    list-style: none;
-}
-
-div#navsecond li {
-    font-weight: bold;
-}
-
 body#homesecond div#navsecond li {
     margin: 5px 0 0 0;
+    padding: 0;
+    font-family: '微软雅黑';
 }
 
 body#homesecond div#navsecond li {
@@ -319,13 +227,6 @@ body#homesecond div#navsecond li {
 
 div#navsecond li {
     list-style: none;
-}
-
-div#navsecond ul,
-div#navsecond li {
-    margin: 0;
-    padding: 0;
-    font-family: '微软雅黑';
 }
 
 div#navsecond a {
@@ -341,6 +242,18 @@ div#navsecond a:visited {
     text-decoration: none;
     color: #000000;
     background: transparent;
+}
+
+div#navsecond a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #aaa;
+}
+
+div#navsecond a:active {
+    text-decoration: none;
+    color: #fff;
+    background: #BD2D30;
 }
 
 
@@ -413,13 +326,9 @@ div#sidebar {
     background: transparent;
 }
 
-body#homesecond div#tools {
-    padding: 66px 0 10px 0;
-}
-
 div#tools {
     background: transparent url(ui2019/bg.png) -400px -800px no-repeat;
-    padding: 79px 0 10px 22px;
+    padding: 66px 0 10px 0;
 }
 
 div#tools,
@@ -455,6 +364,12 @@ div#sidebar a {
     font-size: 12px;
     border-bottom: 0px solid #ddd;
     text-decoration: none;
+}
+
+div#sidebar a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #BD2D30;
 }
 
 div#sp_sidebar {
@@ -506,14 +421,6 @@ div#footer #p1,
 div#footer #p2,
 div#footer #p2 a {
     max-height: 0;
-}
-
-div#footer #p1 {
-    font-size: 12px;
-    color: #000;
-    text-align: center;
-    background: transparent url(ui2017/alert.png) no-repeat;
-    background-position: 235px 2px;
 }
 
 div#footer #p2 {
