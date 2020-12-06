@@ -1,5 +1,11 @@
 /* ----------------------------------- global -----------------------------------*/
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body {
     text-align: center;
     margin: 0;
@@ -11,12 +17,6 @@ body {
 body {
     font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
     font-size: 14px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
 }
 
 a:link,
@@ -59,7 +59,7 @@ div#wrapper {
 /* ----------------------------------- header -----------------------------------*/
 
 
-/*设置log*/
+/*设置logo*/
 
 div#header {
     margin: 0 0 0 12px;
@@ -117,7 +117,7 @@ div#navfirst ul#menu {
 div#navfirst ul#menu li {
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none; */
     position: absolute;
     top: 0;
 }
