@@ -5,6 +5,455 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <meta charset="UTF-8">
     <title>{{title}}</title>
+    <style>
+        /* ----------------------------------- global -----------------------------------*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background: #fdfcf8;
+        }
+        
+        body {
+            font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
+            font-size: 14px;
+        }
+        
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: #900b09;
+            background: transparent;
+            border-bottom: 1px solid #900b09;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: #ff0000;
+            background: transparent;
+            border-bottom: 1px solid #ff0000;
+        }
+        
+        a:active {
+            text-decoration: none;
+            color: #ff0000;
+            background: transparent;
+        }
+        /* ----------------------------------- wrapper -----------------------------------*/
+        /*设置页面边框图片居中*/
+        
+        div#wrapper {
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+            width: 1239px;
+            text-align: left;
+            background: transparent url(./w3cschool_files/ui2017/wrapper.png) top left repeat-y;
+        }
+        /* ----------------------------------- header -----------------------------------*/
+        /*设置logo*/
+        
+        div#header {
+            margin: 0 0 0 12px;
+            padding: 0;
+            border: 0;
+            width: 1210px;
+            height: 100px;
+            background-color: #fdfcf8;
+        }
+        
+        div#header a#logo {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        div#header a#logo {
+            text-indent: -9999px;
+            overflow: hidden;
+            float: left;
+        }
+        
+        div#header a#logo:link,
+        div#header a#logo:visited {
+            display: block;
+            width: 372px;
+            height: 90px;
+            background: transparent url(./w3cschool_files/ui2019/bg.png) 0 -150px no-repeat;
+        }
+        
+        div#header a#logo:hover {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) 0 -250px no-repeat;
+        }
+        /* ----------------------------------- navfirst -----------------------------------*/
+        
+        div#navfirst {
+            height: 48px;
+            width: 1210px;
+            margin: 0 0 0 12px;
+            padding: 0;
+            border: 0;
+            background: #E8E7E3;
+        }
+        
+        div#navfirst ul#menu {
+            height: 48px;
+            width: 1210px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        
+        div#navfirst ul#menu li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            top: 0;
+        }
+        
+        ul#menu li,
+        ul#menu a {
+            display: block;
+            height: 48px;
+            border-bottom: 0;
+        }
+        
+        div#navfirst ul#menu li a {
+            text-indent: -9999px;
+            overflow: hidden;
+            text-decoration: none;
+        }
+        
+        div#navfirst ul#menu {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) top left no-repeat;
+        }
+        
+        #h {
+            width: 166px;
+            left: 0px;
+        }
+        
+        #b {
+            width: 191px;
+            left: 166px;
+        }
+        
+        #s {
+            width: 175px;
+            left: 357px;
+        }
+        
+        #p {
+            width: 198px;
+            left: 532px;
+        }
+        
+        #x {
+            width: 113px;
+            left: 730px;
+        }
+        
+        #w {
+            width: 197px;
+            left: 843px;
+        }
+        
+        #r {
+            width: 170px;
+            left: 1040px;
+        }
+        
+        #h a:hover {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) 0 -48px no-repeat;
+        }
+        
+        #b a:hover {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) -166px -48px no-repeat;
+        }
+        
+        #s a:hover {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) -357px -48px no-repeat;
+        }
+        
+        #p a:hover {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) -532px -48px no-repeat;
+        }
+        
+        #x a:hover {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) -730px -48px no-repeat;
+        }
+        
+        #w a:hover {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) -843px -48px no-repeat;
+        }
+        
+        #r a:hover {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) -1040px -48px no-repeat;
+        }
+        
+        body.html #h {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) 0 -48px no-repeat;
+        }
+        /* ----------------------------------- navsecond ----------------------------------- */
+        
+        div#navsecond {
+            float: left;
+            margin: 0 0 0 12px;
+            padding: 0;
+            border: 0;
+            width: 180px;
+            background: transparent;
+        }
+        
+        div#course {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) 0 -800px no-repeat;
+            padding: 66px 0 10px 0;
+        }
+        
+        div#course {
+            margin: 0;
+            border: 0;
+        }
+        
+        body#homesecond div#navsecond li {
+            margin: 5px 0 0 0;
+            padding: 0;
+            font-family: '微软雅黑';
+        }
+        
+        body#homesecond div#navsecond li {
+            font-weight: bold;
+        }
+        
+        div#navsecond li {
+            list-style: none;
+        }
+        
+        div#navsecond a {
+            display: block;
+            padding: 5px 0 5px 15px;
+            font-size: 12px;
+            border-bottom: 0px solid #ddd;
+            text-decoration: none;
+        }
+        
+        div#navsecond a:link,
+        div#navsecond a:visited {
+            text-decoration: none;
+            color: #000000;
+            background: transparent;
+        }
+        
+        div#navsecond a:hover {
+            text-decoration: none;
+            color: #fff;
+            background: #aaa;
+        }
+        
+        div#navsecond a:active {
+            text-decoration: none;
+            color: #fff;
+            background: #BD2D30;
+        }
+        /* ----------------------------------- maincontent ----------------------------------- */
+        
+        div#maincontent {
+            float: left;
+            margin: 0;
+            padding: 30px 0 0 0;
+            border: 0;
+            width: 850px;
+            background: transparent;
+        }
+        
+        div#maincontent div {
+            width: 810px;
+            margin: 0 0 0 25px;
+            padding: 30px 0 32px 0;
+            border: 0;
+            border-bottom: 1px solid #aaa;
+        }
+        
+        div#maincontent h1,
+        div#maincontent h2 {
+            font-family: '微软雅黑';
+        }
+        
+        div#maincontent h1 {
+            margin: 0 0 0 25px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #3f3f3f;
+        }
+        
+        div#maincontent h2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3f3f3f;
+        }
+        
+        div#maincontent div#w3school p {
+            margin-left: 15px;
+        }
+        
+        div#maincontent p {
+            margin: 15px 0 0 0;
+            line-height: 150%;
+        }
+        
+        div#maincontent div#foogz {
+            width: 800px;
+            height: 250px;
+            padding: 0;
+        }
+        
+        div#foogz a#foogz_link {
+            display: block;
+            width: 800px;
+            height: 250px;
+            border: 0;
+            text-indent: -9999px;
+            overflow: hidden;
+            text-decoration: none;
+            background: transparent url(./w3cschool_files/time/20200407/footer.gif) 0 0 no-repeat;
+        }
+        /* ----------------------------------- sidebar ----------------------------------- */
+        
+        div#sidebar {
+            float: left;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 180px;
+            background: transparent;
+        }
+        
+        div#tools {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) -400px -800px no-repeat;
+            padding: 66px 0 10px 0;
+        }
+        
+        div#tools,
+        div#sp_sidebar {
+            margin: 0;
+            border: 0;
+        }
+        
+        div#sidebar h2 {
+            font-size: 14px;
+            margin: 0;
+            padding: 10px 0 5px 10px;
+            color: #000;
+            display: block;
+            border-bottom: 0px solid #ddd;
+            font-family: '微软雅黑';
+        }
+        
+        div#sidebar ul,
+        div#sidebar li {
+            margin: 0;
+            padding: 0;
+            font-family: '微软雅黑';
+        }
+        
+        div#sidebar li {
+            list-style: none;
+        }
+        
+        div#sidebar a {
+            display: block;
+            padding: 5px 0 5px 15px;
+            font-size: 12px;
+            border-bottom: 0px solid #ddd;
+            text-decoration: none;
+        }
+        
+        div#sidebar a:hover {
+            text-decoration: none;
+            color: #fff;
+            background: #BD2D30;
+        }
+        
+        div#sp_sidebar {
+            background: transparent url(./w3cschool_files/ui2019/bg.png) -600px -800px no-repeat;
+            padding: 66px 0 10px 10px;
+        }
+        
+        div#sp_sidebar div#sps_1 {
+            width: 160px;
+            height: 600px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        div#sps_1 a#sps_1_link {
+            display: block;
+            width: 160px;
+            height: 600px;
+            border: 0;
+            text-indent: -9999px;
+            overflow: hidden;
+            text-decoration: none;
+            background: transparent url(./w3cschool_files/time/20200407/sidebar.png) 0 0 no-repeat;
+        }
+        /* ----------------------------------- footer ----------------------------------- */
+        
+        div#footer {
+            clear: both;
+            margin: 0;
+            padding-top: 16px;
+            padding-bottom: 20px;
+            margin-left: 12px;
+            width: 1210px;
+            line-height: 24px;
+            background: #f0f0f0;
+            border-top: 0px solid #fff;
+            background: #fdfcf8 url(./w3cschool_files/ui2017/footer.png) top left repeat-x;
+            font-family: PingFangSC-Regular, '微软雅黑', Verdana, Arial, '宋体';
+        }
+        
+        div#footer a {
+            border-bottom: 1px solid;
+            margin-left: 10px;
+        }
+        
+        div#footer #p1,
+        div#footer #p2,
+        div#footer #p2 a {
+            max-height: 0;
+        }
+        
+        div#footer #p1 {
+            font-size: 12px;
+            color: #000;
+            text-align: center;
+            background-position: 235px 2px;
+        }
+        
+        div#footer #p2 {
+            margin: 55px 0 30px 0;
+            font-size: 14px;
+            text-align: center;
+            color: #000;
+        }
+        
+        div#footer a:link,
+        div#footer a:visited {
+            text-decoration: none;
+            color: #000;
+            background: transparent;
+        }
+    </style>
+
 </head>
 
 <body id="homesecond" class="html">
@@ -17,13 +466,13 @@
 
         <div id="navfirst">
             <ul id="menu">
-                <li is="base-menu-li" v-for="menu in menuList" :key=menu.id :menu="menu"></li>
+                <li is="base-menu" v-for="menu in menuList" :key=menu.id :menu="menu"></li>
             </ul>
         </div>
 
         <div id="navsecond">
             <div id="course">
-                <li is="base-menu-li" v-for="course in courseList" :key=course.id :menu="course"></li>
+                <li is="base-menu" v-for="course in courseList" :key=course.id :menu="course"></li>
             </div>
         </div>
 
@@ -56,16 +505,23 @@
                 {{p1.content}}
             </p>
 
-            <p id="p2">
+            <!-- <p id="p2">
                 <a is="base-footer" v-for="(footer,index) in p2.footerList" :key=index :footer="footer"></a>
+
+            </p> -->
+            <p id="p2">
+                <a href="p2.footer1.href" title="p2.footer1.title">{{p2.footer1.content}}</a>
+                <a href="p2.footer2.href" title="p2.footer2.title">{{p2.footer2.content}}</a>
+                <a href="p2.footer3.href" title="p2.footer3.title">{{p2.footer3.content}}</a>
+                <a href="p2.footer4.href">{{p2.footer4.content}}</a>
+                <a href="p2.footer5.href">{{p2.footer5.content}}</a>
             </p>
         </div>
 </body>
 
 
 <script>
-
-    Vue.component('base-menu-li', {
+    Vue.component('base-menu', {
         props: ['menu'],
         template: '<li :id="menu.id" > <a :href="menu.href" :title="menu.title">{{menu.content}}</a></li>'
     })
@@ -82,7 +538,8 @@
 
     Vue.component('base-footer', {
         props: ['footer'],
-        template: '<a :href="footer.href" :title="footer.title">{{footer.content}}</a>'
+        template: `<a :href="footer.href" :title="footer.title">{{footer.content}}
+            </a>`
     })
 
 
@@ -192,7 +649,8 @@
         el: '#maincontent',
         data: {
             w3school: {
-                h1Content: 'HTML 系列教程', strongContent: '从左侧的菜单选择你需要的教程！'
+                h1Content: 'HTML 系列教程',
+                strongContent: '从左侧的菜单选择你需要的教程！'
             },
             contenList: [{
                 h2Content: 'HTML',
@@ -200,48 +658,48 @@
                     'HTML 指超文本标签语言。',
                     'HTML 是通向 WEB 技术世界的钥匙。',
                     '在 W3School 的 HTML 教程中，您将学习如何使用 HTML 来创建站点。',
-                    'HTML 非常容易学习！你会喜欢它的！<a href="https://www.w3school.com.cn/html/index.asp" title="HTML 教程">现在开始学习 HTML</a> ！']
-            },
-            {
+                    'HTML 非常容易学习！你会喜欢它的！<a href="https://www.w3school.com.cn/html/index.asp" title="HTML 教程">现在开始学习 HTML</a> ！'
+                ]
+            }, {
                 h2Content: 'XHTML',
                 pList: [
                     'XHTML 是更严谨更纯净的 HTML 版本。',
                     '在 W3School 的 XHTML 教程中，您将学习 HTML 与 XHTML 之间的差异，以及 XHTML 的优势所在。',
                     '我们还将会为您展示将站点升级至 XHTML 的方法，以帮助您快速部署 XHTML 技术。',
-                    'XHTML 已经成为优秀前端设计师和工程师的首选。<a href="https://www.w3school.com.cn/xhtml/index.asp" title="XHTML 教程">现在开始学习 XHTML</a> ！']
-            },
-            {
+                    'XHTML 已经成为优秀前端设计师和工程师的首选。<a href="https://www.w3school.com.cn/xhtml/index.asp" title="XHTML 教程">现在开始学习 XHTML</a> ！'
+                ]
+            }, {
                 h2Content: 'HTML 5',
                 pList: [
                     'HTML 5 是下一代的 HTML。',
                     'HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。',
                     '在 W3School 的 HTML 5 教程中，您将了解 HTML5 中的新特性。',
-                    '<a href="https://www.w3school.com.cn/html5/index.asp" title="HTML 5 教程">现在就开始学习 HTML 5</a> ！']
-            },
-            {
+                    '<a href="https://www.w3school.com.cn/html5/index.asp" title="HTML 5 教程">现在就开始学习 HTML 5</a> ！'
+                ]
+            }, {
                 h2Content: 'CSS',
                 pList: [
                     'CSS 指层叠样式表（Cascading Style Sheets）。',
                     '在我们的 CSS 教程中，您将学习如何使用 CSS 同时控制整个站点的样式和布局。',
                     '通过与 XHTML 结合，CSS 可以帮助我们实行表现与结构分离的开发模式。',
-                    '通过使用 CSS 来提升工作效率！<a href="https://www.w3school.com.cn/css/index.asp" title="CSS 教程">现在开始学习 CSS</a> ！']
-            },
-            {
+                    '通过使用 CSS 来提升工作效率！<a href="https://www.w3school.com.cn/css/index.asp" title="CSS 教程">现在开始学习 CSS</a> ！'
+                ]
+            }, {
                 h2Content: 'CSS3',
                 pList: [
                     'CSS3 是最新的 CSS 标准。',
                     '我们的 CSS3 教程教程向您讲解 CSS3 中的新特性。',
-                    '<a href="https://www.w3school.com.cn/css3/index.asp" title="CSS3 教程">现在就开始学习 CSS3</a> ！']
-            },
-            {
+                    '<a href="https://www.w3school.com.cn/css3/index.asp" title="CSS3 教程">现在就开始学习 CSS3</a> ！'
+                ]
+            }, {
                 h2Content: 'TCP/IP',
                 pList: [
                     'TCP/IP  是针对因特网的通信协议。',
                     '在 W3School 的 TCP/IP 教程中，你将了解到什么是 TCP/IP，以及它如何工作。',
                     '关于 TCP/IP 知识，有助于您理解互联网的运行原理，是您学习 WEB 技术的基础。',
-                    '<a href="https://www.w3school.com.cn/tcpip/index.asp" title="TCP/IP 教程">现在开始学习 TCP/IP</a> ！']
-            },
-            ],
+                    '<a href="https://www.w3school.com.cn/tcpip/index.asp" title="TCP/IP 教程">现在开始学习 TCP/IP</a> ！'
+                ]
+            }, ],
             foogz: {
                 href: 'https://datayi.cn/w/xogjgGDP',
                 title: 'VUE',
@@ -253,49 +711,105 @@
     var sidebarVm = new Vue({
         el: '#sidebar',
         data: {
-            siderList: [
-                {
-                    h2Content: '参考手册',
-                    aList: [
-                        { href: 'https://www.w3school.com.cn/tags/index.asp', title: 'HTML 参考手册', content: 'HTML/HTML5 标签' },
-                        { href: 'https://www.w3school.com.cn/cssref/index.asp', title: 'CSS 参考手册', content: 'CSS 1,2,3' },
-                        { href: 'https://www.w3school.com.cn/tags/html_ref_colornames.asp', title: 'HTML 颜色', content: 'HTML 颜色' },
-                        { href: 'https://www.w3school.com.cn/tags/html_ref_ascii.asp', title: 'HTML 7 比特 ASCII 代码 参考手册', content: 'HTML ASCII' },
-                        { href: 'https://www.w3school.com.cn/tags/html_ref_entities.html', title: 'HTML Latin-1 字符实体', content: 'HTML Latin-1' },
-                        { href: 'https://www.w3school.com.cn/tags/html_ref_symbols.html', title: 'HTML 4.01 符号实体', content: 'HTML 符号' },
-                    ]
-                },
-                {
-                    h2Content: '实例/案例',
-                    aList: [
-                        { href: 'https://www.w3school.com.cn/example/html_examples.asp', content: 'HTML 实例' },
-                        { href: 'https://www.w3school.com.cn/example/csse_examples.asp', content: 'CSS 实例' }
-                    ]
-                },
-                {
-                    h2Content: '测验/考试',
-                    aList: [
-                        { href: 'https://www.w3school.com.cn/html/html_quiz.asp', content: 'HTML 测验' },
-                        { href: 'https://www.w3school.com.cn/html5/html5_quiz.asp', content: 'HTML5 测验' },
-                        { href: 'httphttps://www.w3school.com.cn/xhtml/xhtml_quiz.asp', content: 'XHTML 测验' },
-                        { href: 'https://www.w3school.com.cn/css/css_quiz.asp', content: 'CSS 测验' }
-                    ]
-                },
-                {
-                    h2Content: '代码验证',
-                    aList: [
-                        { href: 'https://www.w3school.com.cn/site/site_validate.asp', content: '验证 HTML' },
-                        { href: 'https://www.w3school.com.cn/site/site_validate.asp', content: '验证 CSS' },
-                        { href: 'https://www.w3school.com.cn/site/site_validate.asp', content: '验证 XHTML' }
-                    ]
-                }
-            ],
+            siderList: [{
+                h2Content: '参考手册',
+                aList: [{
+                    href: 'https://www.w3school.com.cn/tags/index.asp',
+                    title: 'HTML 参考手册',
+                    content: 'HTML/HTML5 标签'
+                }, {
+                    href: 'https://www.w3school.com.cn/cssref/index.asp',
+                    title: 'CSS 参考手册',
+                    content: 'CSS 1,2,3'
+                }, {
+                    href: 'https://www.w3school.com.cn/tags/html_ref_colornames.asp',
+                    title: 'HTML 颜色',
+                    content: 'HTML 颜色'
+                }, {
+                    href: 'https://www.w3school.com.cn/tags/html_ref_ascii.asp',
+                    title: 'HTML 7 比特 ASCII 代码 参考手册',
+                    content: 'HTML ASCII'
+                }, {
+                    href: 'https://www.w3school.com.cn/tags/html_ref_entities.html',
+                    title: 'HTML Latin-1 字符实体',
+                    content: 'HTML Latin-1'
+                }, {
+                    href: 'https://www.w3school.com.cn/tags/html_ref_symbols.html',
+                    title: 'HTML 4.01 符号实体',
+                    content: 'HTML 符号'
+                }, ]
+            }, {
+                h2Content: '实例/案例',
+                aList: [{
+                    href: 'https://www.w3school.com.cn/example/html_examples.asp',
+                    content: 'HTML 实例'
+                }, {
+                    href: 'https://www.w3school.com.cn/example/csse_examples.asp',
+                    content: 'CSS 实例'
+                }]
+            }, {
+                h2Content: '测验/考试',
+                aList: [{
+                    href: 'https://www.w3school.com.cn/html/html_quiz.asp',
+                    content: 'HTML 测验'
+                }, {
+                    href: 'https://www.w3school.com.cn/html5/html5_quiz.asp',
+                    content: 'HTML5 测验'
+                }, {
+                    href: 'httphttps://www.w3school.com.cn/xhtml/xhtml_quiz.asp',
+                    content: 'XHTML 测验'
+                }, {
+                    href: 'https://www.w3school.com.cn/css/css_quiz.asp',
+                    content: 'CSS 测验'
+                }]
+            }, {
+                h2Content: '代码验证',
+                aList: [{
+                    href: 'https://www.w3school.com.cn/site/site_validate.asp',
+                    content: '验证 HTML'
+                }, {
+                    href: 'https://www.w3school.com.cn/site/site_validate.asp',
+                    content: '验证 CSS'
+                }, {
+                    href: 'https://www.w3school.com.cn/site/site_validate.asp',
+                    content: '验证 XHTML'
+                }]
+            }],
             sp_sidebar: {
                 href: 'https://datayi.cn/w/korgLGd9'
             }
         }
     })
 
+    // var footerVm = new Vue({
+    //         el: '#footer',
+    //         data: {
+    //             p1: {
+    //                 content: 'W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。'
+    //             },
+    //             p2: {
+    //                 footerList: [{
+    //                     href: 'https://www.w3school.com.cn/about/about_use.asp',
+    //                     title: '关于使用',
+    //                     content: '使用条款'
+    //                 }, {
+    //                     href: 'https://www.w3school.com.cn/about/about_privacy.asp',
+    //                     title: '关于隐私',
+    //                     content: '隐私条款'
+    //                 }, {
+    //                     href: 'https://www.w3school.com.cn/ad.html',
+    //                     title: 'W3School 广告刊例',
+    //                     content: '广告刊例'
+    //                 }, {
+    //                     href: 'https://www.ykinvestment.com/',
+    //                     content: '技术支持：赢科'
+    //                 }, {
+    //                     href: 'http://www.beian.miit.gov.cn/',
+    //                     content: '蒙ICP备06004630号'
+    //                 }]
+    //             }
+    //         }
+    //     })
     var footerVm = new Vue({
         el: '#footer',
         data: {
@@ -303,474 +817,33 @@
                 content: 'W3School 简体中文版提供的内容仅用于培训和测试，不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。版权所有，保留一切权利。'
             },
             p2: {
-                footerList: [
-                    { href: 'https://www.w3school.com.cn/about/about_use.asp', title: '关于使用', content: '使用条款' },
-                    { href: 'https://www.w3school.com.cn/about/about_privacy.asp', title: '关于隐私', content: '隐私条款' },
-                    { href: 'https://www.w3school.com.cn/ad.html', title: 'W3School 广告刊例', content: '广告刊例' },
-                    { href: 'https://www.ykinvestment.com/', content: '技术支持：赢科' },
-                    { href: 'http://www.beian.miit.gov.cn/', content: '蒙ICP备06004630号' }
-                ]
+                footer1: {
+                    href: "https://www.w3school.com.cn/about/about_use.asp",
+                    title: '关于使用',
+                    content: '使用条款'
+                },
+                footer2: {
+                    href: "https://www.w3school.com.cn/about/about_privacy.asp",
+                    title: '关于隐私',
+                    content: '隐私条款'
+                },
+                footer3: {
+                    href: "https://www.w3school.com.cn/ad.html",
+                    title: 'W3School 广告刊例',
+                    content: '广告刊例'
+                },
+                footer4: {
+                    href: "https://www.ykinvestment.com/",
+                    content: '技术支持：赢科'
+                },
+                footer5: {
+                    href: "http://www.beian.miit.gov.cn/",
+                    content: '蒙ICP备06004630号'
+                }
             }
         }
     })
 </script>
 
-<style>
-    /* ----------------------------------- global -----------------------------------*/
-    * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
-
-    body {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        background: #fdfcf8;
-    }
-
-    body {
-        font-family: PingFangSC-Regular, Verdana, Arial, 微软雅黑, 宋体;
-        font-size: 14px;
-    }
-
-    a:link,
-    a:visited {
-        text-decoration: none;
-        color: #900b09;
-        background: transparent;
-        border-bottom: 1px solid #900b09;
-    }
-
-    a:hover {
-        text-decoration: none;
-        color: #ff0000;
-        background: transparent;
-        border-bottom: 1px solid #ff0000;
-    }
-
-    a:active {
-        text-decoration: none;
-        color: #ff0000;
-        background: transparent;
-    }
-
-    /* ----------------------------------- wrapper -----------------------------------*/
-
-    /*设置页面边框图片居中*/
-    div#wrapper {
-        margin: 0 auto;
-        padding: 0;
-        border: 0;
-        width: 1239px;
-        text-align: left;
-        background: transparent url(./w3cschool_files/ui2017/wrapper.png) top left repeat-y;
-    }
-
-    /* ----------------------------------- header -----------------------------------*/
-
-
-    /*设置logo*/
-    div#header {
-        margin: 0 0 0 12px;
-        padding: 0;
-        border: 0;
-        width: 1210px;
-        height: 100px;
-        background-color: #fdfcf8;
-    }
-
-    div#header a#logo {
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
-
-    div#header a#logo {
-        text-indent: -9999px;
-        overflow: hidden;
-        float: left;
-    }
-
-    div#header a#logo:link,
-    div#header a#logo:visited {
-        display: block;
-        width: 372px;
-        height: 90px;
-        background: transparent url(./w3cschool_files/ui2019/bg.png) 0 -150px no-repeat;
-    }
-
-    div#header a#logo:hover {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) 0 -250px no-repeat;
-    }
-
-    /* ----------------------------------- navfirst -----------------------------------*/
-
-    div#navfirst {
-        height: 48px;
-        width: 1210px;
-        margin: 0 0 0 12px;
-        padding: 0;
-        border: 0;
-        background: #E8E7E3;
-    }
-
-    div#navfirst ul#menu {
-        height: 48px;
-        width: 1210px;
-        margin: 0;
-        padding: 0;
-        position: relative;
-    }
-
-    div#navfirst ul#menu li {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: absolute;
-        top: 0;
-    }
-
-    ul#menu li,
-    ul#menu a {
-        display: block;
-        height: 48px;
-        border-bottom: 0;
-    }
-
-    div#navfirst ul#menu li a {
-        text-indent: -9999px;
-        overflow: hidden;
-        text-decoration: none;
-    }
-
-    div#navfirst ul#menu {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) top left no-repeat;
-    }
-
-    #h {
-        width: 166px;
-        left: 0px;
-    }
-
-    #b {
-        width: 191px;
-        left: 166px;
-    }
-
-    #s {
-        width: 175px;
-        left: 357px;
-    }
-
-    #p {
-        width: 198px;
-        left: 532px;
-    }
-
-    #x {
-        width: 113px;
-        left: 730px;
-    }
-
-    #w {
-        width: 197px;
-        left: 843px;
-    }
-
-    #r {
-        width: 170px;
-        left: 1040px;
-    }
-
-    #h a:hover {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) 0 -48px no-repeat;
-    }
-
-    #b a:hover {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) -166px -48px no-repeat;
-    }
-
-    #s a:hover {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) -357px -48px no-repeat;
-    }
-
-    #p a:hover {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) -532px -48px no-repeat;
-    }
-
-    #x a:hover {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) -730px -48px no-repeat;
-    }
-
-    #w a:hover {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) -843px -48px no-repeat;
-    }
-
-    #r a:hover {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) -1040px -48px no-repeat;
-    }
-
-    body.html #h {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) 0 -48px no-repeat;
-    }
-
-    /* ----------------------------------- navsecond ----------------------------------- */
-
-    div#navsecond {
-        float: left;
-        margin: 0 0 0 12px;
-        padding: 0;
-        border: 0;
-        width: 180px;
-        background: transparent;
-    }
-
-    div#course {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) 0 -800px no-repeat;
-        padding: 66px 0 10px 0;
-    }
-
-    div#course {
-        margin: 0;
-        border: 0;
-    }
-
-    body#homesecond div#navsecond li {
-        margin: 5px 0 0 0;
-        padding: 0;
-        font-family: '微软雅黑';
-    }
-
-    body#homesecond div#navsecond li {
-        font-weight: bold;
-    }
-
-    div#navsecond li {
-        list-style: none;
-    }
-
-    div#navsecond a {
-        display: block;
-        padding: 5px 0 5px 15px;
-        font-size: 12px;
-        border-bottom: 0px solid #ddd;
-        text-decoration: none;
-    }
-
-    div#navsecond a:link,
-    div#navsecond a:visited {
-        text-decoration: none;
-        color: #000000;
-        background: transparent;
-    }
-
-    div#navsecond a:hover {
-        text-decoration: none;
-        color: #fff;
-        background: #aaa;
-    }
-
-    div#navsecond a:active {
-        text-decoration: none;
-        color: #fff;
-        background: #BD2D30;
-    }
-
-    /* ----------------------------------- maincontent ----------------------------------- */
-
-    div#maincontent {
-        float: left;
-        margin: 0;
-        padding: 30px 0 0 0;
-        border: 0;
-        width: 850px;
-        background: transparent;
-    }
-
-    div#maincontent div {
-        width: 810px;
-        margin: 0 0 0 25px;
-        padding: 30px 0 32px 0;
-        border: 0;
-        border-bottom: 1px solid #aaa;
-    }
-
-    div#maincontent h1,
-    div#maincontent h2 {
-        font-family: '微软雅黑';
-    }
-
-    div#maincontent h1 {
-        margin: 0 0 0 25px;
-        font-size: 24px;
-        font-weight: bold;
-        color: #3f3f3f;
-    }
-
-    div#maincontent h2 {
-        font-size: 18px;
-        font-weight: bold;
-        color: #3f3f3f;
-    }
-
-    div#maincontent div#w3school p {
-        margin-left: 15px;
-    }
-
-    div#maincontent p {
-        margin: 15px 0 0 0;
-        line-height: 150%;
-    }
-
-    div#maincontent div#foogz {
-        width: 800px;
-        height: 250px;
-        padding: 0;
-    }
-
-    div#foogz a#foogz_link {
-        display: block;
-        width: 800px;
-        height: 250px;
-        border: 0;
-        text-indent: -9999px;
-        overflow: hidden;
-        text-decoration: none;
-        background: transparent url(./w3cschool_files/time/20200407/footer.gif) 0 0 no-repeat;
-    }
-
-    /* ----------------------------------- sidebar ----------------------------------- */
-
-    div#sidebar {
-        float: left;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        width: 180px;
-        background: transparent;
-    }
-
-    div#tools {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) -400px -800px no-repeat;
-        padding: 66px 0 10px 0;
-    }
-
-    div#tools,
-    div#sp_sidebar {
-        margin: 0;
-        border: 0;
-    }
-
-    div#sidebar h2 {
-        font-size: 14px;
-        margin: 0;
-        padding: 10px 0 5px 10px;
-        color: #000;
-        display: block;
-        border-bottom: 0px solid #ddd;
-        font-family: '微软雅黑';
-    }
-
-    div#sidebar ul,
-    div#sidebar li {
-        margin: 0;
-        padding: 0;
-        font-family: '微软雅黑';
-    }
-
-    div#sidebar li {
-        list-style: none;
-    }
-
-    div#sidebar a {
-        display: block;
-        padding: 5px 0 5px 15px;
-        font-size: 12px;
-        border-bottom: 0px solid #ddd;
-        text-decoration: none;
-    }
-
-    div#sidebar a:hover {
-        text-decoration: none;
-        color: #fff;
-        background: #BD2D30;
-    }
-
-    div#sp_sidebar {
-        background: transparent url(./w3cschool_files/ui2019/bg.png) -600px -800px no-repeat;
-        padding: 66px 0 10px 10px;
-    }
-
-    div#sp_sidebar div#sps_1 {
-        width: 160px;
-        height: 600px;
-        padding: 0;
-        margin: 0;
-    }
-
-    div#sps_1 a#sps_1_link {
-        display: block;
-        width: 160px;
-        height: 600px;
-        border: 0;
-        text-indent: -9999px;
-        overflow: hidden;
-        text-decoration: none;
-        background: transparent url(./w3cschool_files/time/20200407/sidebar.png) 0 0 no-repeat;
-    }
-
-
-    /* ----------------------------------- footer ----------------------------------- */
-
-    div#footer {
-        clear: both;
-        margin: 0;
-        padding-top: 16px;
-        padding-bottom: 20px;
-        margin-left: 12px;
-        width: 1210px;
-        line-height: 24px;
-        background: #f0f0f0;
-        border-top: 0px solid #fff;
-        background: #fdfcf8 url(./w3cschool_files/ui2017/footer.png) top left repeat-x;
-        font-family: PingFangSC-Regular, '微软雅黑', Verdana, Arial, '宋体';
-    }
-
-
-    div#footer a {
-        border-bottom: 1px solid;
-        margin-left: 10px;
-    }
-
-    div#footer #p1,
-    div#footer #p2,
-    div#footer #p2 a {
-        max-height: 0;
-    }
-
-    div#footer #p1 {
-        font-size: 12px;
-        color: #000;
-        text-align: center;
-        background-position: 235px 2px;
-    }
-
-    div#footer #p2 {
-        margin: 55px 0 30px 0;
-        font-size: 14px;
-        text-align: center;
-        color: #000;
-    }
-
-    div#footer a:link,
-    div#footer a:visited {
-        text-decoration: none;
-        color: #000;
-        background: transparent;
-    }
-</style>
 
 </html>
